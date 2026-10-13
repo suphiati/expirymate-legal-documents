@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33378376/README.md)
 # ExpiryMate — Legal & Support
 
 Public legal and support pages for the ExpiryMate iOS app, published with GitHub Pages.

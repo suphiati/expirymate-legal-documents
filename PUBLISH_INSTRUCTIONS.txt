@@ -1,0 +1,34 @@
+ExpiryMate Legal Site — GitHub Pages deployment
+
+Repository: https://github.com/suphiati/expirymate-legal-documents
+
+Option A — GitHub browser:
+1. Open the empty repository and click "creating a new file".
+2. Create README.md and commit to main to initialize the repository.
+3. Extract this ZIP. Upload the files in the ZIP root to the repository root, preserving assets/ as a folder. GitHub web uploader supports folder drag and drop in many browsers.
+4. Settings > Pages > Source: Deploy from a branch > main > /(root) > Save.
+5. Wait for Pages deployment and verify the four URLs below.
+
+Option B — PowerShell from the extracted folder (Git installed):
+  git init -b main
+  git add -A
+  git commit -m "Publish ExpiryMate legal site"
+  git remote add origin https://github.com/suphiati/expirymate-legal-documents.git
+  git push -u origin main
+
+Then enable Pages as in Option A. If main already exists remotely, clone the repository instead and copy the site files into the clone; do not force push.
+
+URLs to verify after publishing:
+https://suphiati.github.io/expirymate-legal-documents/
+https://suphiati.github.io/expirymate-legal-documents/privacy-policy.html
+https://suphiati.github.io/expirymate-legal-documents/terms-of-use.html
+https://suphiati.github.io/expirymate-legal-documents/support.html
+
+Apple App Store Connect:
+Privacy Policy URL: https://suphiati.github.io/expirymate-legal-documents/privacy-policy.html
+Support URL: https://suphiati.github.io/expirymate-legal-documents/support.html
+Terms URL: https://suphiati.github.io/expirymate-legal-documents/terms-of-use.html
+Support email: suphi.celikoz@gmail.com
+
+IMPORTANT: Do not enter these as live URLs until deployment is verified.
+App privacy claims should be checked against the final shipped binary.
