@@ -32,7 +32,7 @@
       <span class="eyebrow">Legal · Android</span>
       <h1>Privacy Policy</h1>
       <p class="lede">ExpiryMate for Android is built to work entirely on your phone or tablet. This policy explains what information the app handles, where it is kept, and the choices you have.</p>
-      <p class="meta">Effective date: October 16, 2026 · Applies to the ExpiryMate Android app and its home screen widget. Using an iPhone? See the <a href="privacy-policy.html">iOS Privacy Policy</a>.</p>
+      <p class="meta">Effective date: November 16, 2026 · Applies to the ExpiryMate Android app and its home screen widget. Using an iPhone? See the <a href="privacy-policy.html">iOS Privacy Policy</a>.</p>
     </section>
 
     <section class="card summary" aria-labelledby="short">
@@ -42,6 +42,7 @@
         <li>The developer does not receive, collect, or have access to the items, notes, photos, or other content you enter.</li>
         <li>ExpiryMate contains no analytics, advertising, tracking, or crash-reporting SDKs, and does not sell or share personal information.</li>
         <li>Subscriptions are processed by Google Play. ExpiryMate never sees your payment details.</li>
+        <li>If you subscribe, the purchase is recorded with RevenueCat, a subscription service, under a random anonymous ID. RevenueCat never receives anything you enter in the app.</li>
         <li>Google's Play Billing Library, which the app uses for the optional subscription, sends technical diagnostic information about billing to Google. It does not include anything you enter in the app.</li>
       </ul>
     </section>
@@ -87,14 +88,15 @@
 
     <section class="card" id="leaves">
       <h2>3. Does anything leave your device?</h2>
-      <p>ExpiryMate does not transmit the content you enter to the developer or to any server. The app's own code makes no network requests. Information leaves your device only in these cases, which are controlled by you or by Google:</p>
+      <p>ExpiryMate does not transmit the content you enter to the developer or to any server. Information leaves your device only in these cases:</p>
       <ul>
         <li><strong>Export (Pro):</strong> when you choose Export Data, the app creates a JSON file of your items (photos are not included) and you choose where to save it. After that, the file is handled by the location you selected.</li>
         <li><strong>Email support:</strong> if you contact us, we receive your email address and anything you include in your message. The pre-filled support email adds only the app version and Android version.</li>
         <li><strong>Google Play services:</strong> subscription purchases, restores, and ratings are handled by Google Play under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Device backups follow your Android and Google account settings.</li>
         <li><strong>Google Play Billing diagnostics:</strong> Google's Play Billing Library, which is part of the app and starts whenever the app runs (including briefly in the background to schedule reminders or update the widget), sends technical diagnostic logs to Google: which billing operations ran, their result codes and timing, the app's package name and version, the library version, a random number that is created anew for each session and not stored, and device details (model and manufacturer, Android version, memory size, language and region settings, mobile network code, time zone offset, and network type). They travel over an encrypted connection to Google, which provides Google Play billing for the app, and are handled under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. They contain no items, notes, photos, or other content you enter, no purchase tokens or order numbers, and the developer does not receive them.</li>
+        <li><strong>RevenueCat:</strong> the app includes the RevenueCat SDK to keep a record of subscription purchases. When the app runs, the SDK contacts RevenueCat (RevenueCat, Inc., United States) over an encrypted connection with a random anonymous ID that is created on your device, the app's package name and version, the Android version, and your language and region settings; RevenueCat's servers also see your IP address, as with any internet connection. If you have an ExpiryMate subscription, the SDK also sends its Google Play purchase record: the product and plan, the purchase token and order number, the purchase time, and the price and currency. RevenueCat uses the purchase token to follow renewals, cancellations, and refunds with Google Play. The developer can see these purchase records in RevenueCat; they are not linked to your name, email address, or Google account, and they contain no items, notes, photos, or other content you enter. RevenueCat handles this information under the <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>. The app does not use RevenueCat's advertising or attribution features and does not send the advertising ID.</li>
       </ul>
-      <p>In Google Play's Data safety section, ExpiryMate therefore declares one data type: App info and performance (diagnostics), collected by the Google Play Billing Library for analytics, required (it cannot be turned off), encrypted in transit, and not shared, because Google receives it as the provider of Google Play billing for the app. No other user data is collected or shared.</p>
+      <p>In Google Play's Data safety section, ExpiryMate therefore declares two data types. App info and performance (diagnostics) is collected by the Google Play Billing Library for analytics, required (it cannot be turned off), encrypted in transit, and not shared, because Google receives it as the provider of Google Play billing for the app. Financial info (purchase history) is collected through RevenueCat for app functionality and analytics, required, encrypted in transit, and not shared, because RevenueCat processes it as a service provider for the app. No other user data is collected or shared.</p>
     </section>
 
     <section class="card" id="notifications">
@@ -115,13 +117,13 @@
 
     <section class="card" id="subscriptions">
       <h2>7. Subscriptions</h2>
-      <p>ExpiryMate Pro is an optional auto-renewing subscription sold through Google Play. Payments, billing, renewals, cancellations, and refunds are handled by Google Play. ExpiryMate uses the Google Play Billing Library on your device to read a signed confirmation of whether your subscription is active, and keeps that status on the device so Pro keeps working offline for up to 7 days after the last successful check with Google Play. ExpiryMate does not receive your name, email address, or payment information, and does not operate a server that stores purchase records.</p>
+      <p>ExpiryMate Pro is an optional auto-renewing subscription sold through Google Play. Payments, billing, renewals, cancellations, and refunds are handled by Google Play. ExpiryMate uses the Google Play Billing Library on your device to read a signed confirmation of whether your subscription is active, and keeps that status on the device so Pro keeps working offline for up to 7 days after the last successful check with Google Play. ExpiryMate does not receive your name, email address, or payment information. Subscription purchases are also recorded with RevenueCat, as described in section 3.</p>
     </section>
 
     <section class="card" id="third-parties">
       <h2>8. Third-party services</h2>
-      <p>ExpiryMate does not include any analytics, advertising, crash-reporting, or tracking software and has no server of its own. It does not track you across apps or websites and does not sell or share personal information.</p>
-      <p>The app is built with Android Jetpack libraries that run on your device, and with Google's Play Billing Library, which talks to the Google Play Store app on your device to process subscriptions and sends the billing diagnostics described in section 3 to Google. This website is hosted on GitHub Pages; GitHub may process technical data such as IP addresses when you visit it, as described in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>. The website itself uses no cookies, analytics, or trackers.</p>
+      <p>ExpiryMate does not include any advertising, crash-reporting, or tracking software and has no server of its own. Its only analytics are RevenueCat's subscription statistics, which are based on the purchase records described in section 3. It does not track you across apps or websites and does not sell or share personal information.</p>
+      <p>The app is built with Android Jetpack libraries that run on your device, and with Google's Play Billing Library, which talks to the Google Play Store app on your device to process subscriptions and sends the billing diagnostics described in section 3 to Google, and with the RevenueCat SDK described in section 3. This website is hosted on GitHub Pages; GitHub may process technical data such as IP addresses when you visit it, as described in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>. The website itself uses no cookies, analytics, or trackers.</p>
     </section>
 
     <section class="card" id="permissions">
@@ -130,7 +132,7 @@
         <li><strong>Notifications</strong> (Android 13+): to show your expiration reminders.</li>
         <li><strong>Run at startup</strong> (receive boot completed): Android clears scheduled reminders when the device restarts, so ExpiryMate reschedules them after a restart.</li>
         <li><strong>Google Play billing</strong>: added by the Play Billing Library to offer the optional subscription.</li>
-        <li><strong>Internet and network state</strong>: added by the Play Billing Library's diagnostics component (network state is also used by Android Jetpack WorkManager). ExpiryMate's own code makes no network requests.</li>
+        <li><strong>Internet and network state</strong>: added by the Play Billing Library's diagnostics component and the RevenueCat SDK (network state is also used by Android Jetpack WorkManager). ExpiryMate's own code makes no other network requests.</li>
         <li><strong>Wake lock and foreground service</strong>: added by Android Jetpack WorkManager, which keeps the home screen widget up to date.</li>
       </ul>
       <p>ExpiryMate does not request location, contacts, camera, microphone, or storage permissions.</p>
@@ -159,7 +161,7 @@
 
     <section class="card" id="rights">
       <h2>13. Your privacy rights</h2>
-      <p>Depending on where you live (for example under the GDPR or Turkey's KVKK), you may have rights to access, correct, or delete personal information, or to object to its processing. Since the developer does not receive your information, you can exercise these rights directly in the app (by editing or deleting your items) or by uninstalling it. For information held by Google, including Google Play Billing diagnostics, see the Google Privacy Policy. If we receive a support email from you, you can ask us to delete that correspondence.</p>
+      <p>Depending on where you live (for example under the GDPR or Turkey's KVKK), you may have rights to access, correct, or delete personal information, or to object to its processing. Since the developer does not receive the content you enter, you can exercise these rights over it directly in the app (by editing or deleting your items) or by uninstalling it. To have the anonymous purchase record held by RevenueCat deleted, contact support through the <a href="support-android.html">support page</a>. For information held by Google, including Google Play Billing diagnostics, see the Google Privacy Policy. If we receive a support email from you, you can ask us to delete that correspondence.</p>
     </section>
 
     <section class="card" id="changes">
